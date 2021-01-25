@@ -1,0 +1,6 @@
+<%for(film of films){%>
+  <div><%= film.title%></div>
+  <div><%= film.price%></div>
+  <a href=<%=`/films/delete/${film._id}`%> >Delete</a>
+  <hr/>
+<%}%>

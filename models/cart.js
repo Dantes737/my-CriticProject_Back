@@ -1,0 +1,8 @@
+const mongoose=require("mongoose");
+
+const Schema=mongoose.Schema;
+
+module.exports= new Schema({
+item_ID:String,
+});
+
