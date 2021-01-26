@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use((req, res, next) => {
   // const openPathes = [ '/users/login', '/users/signup', '/products' ];
   const openPathes = [
-    "/users/login", "/users/signup","/films/list","/films",
+    "/users/login", "/users/signup","/films/list","/films","/",
   ];
   if (!openPathes.includes(req.path)) {
     try {
