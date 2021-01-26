@@ -4,7 +4,8 @@ var router = express.Router();
 const mongoose = require("mongoose");
 
 //2. Встановлюємо з"єднання
-mongoose.connect("mongodb://localhost:27017/criticSitedb", {
+const url =process.env.MONGO_URL||"mongodb://localhost:27017/criticSitedb"
+mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
